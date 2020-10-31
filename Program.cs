@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 namespace PrimeraAppMonografico
    
 {
-    public struct Persona
-        {
-            public string nombrePersona;
-            public string anioNacimiento;
-        }
+    public struct Persona{public string nombrePersona; public int anioNacimiento;}
+
     class Program
     {
        
@@ -22,7 +19,7 @@ namespace PrimeraAppMonografico
             int i = 0;
             string a;
             string respUser = "y"; 
-            Persona[] datosPersona = new Persona[100]; 
+            Persona[] datosPersona = new Persona[100];
             
              Console.WriteLine("      GRUPO 12 {0}" +
                     "Monografico #44 {0}" +
@@ -31,14 +28,12 @@ namespace PrimeraAppMonografico
                     "Maicols Zorrilla Natera {0}", Environment.NewLine);
 
             do
-            {          
+            {
                 Console.WriteLine("Inserte los datos de la persona " + i + "{0}", Environment.NewLine);
                 Console.WriteLine("Nombre: ");
                 datosPersona[i].nombrePersona = Console.ReadLine();
-
                 Console.WriteLine("Fecha de Nacimiento de " + datosPersona[i].nombrePersona + ": {0}", Environment.NewLine);
-                datosPersona[i].anioNacimiento = Console.ReadLine();
-
+                datosPersona[i].anioNacimiento = Console.Read() ;
                 //Prueba
                 Console.WriteLine("{0}PRUEBA DE SALIDA: {0}{0}PERSONA "+i+"{0}Nombre "+ i + ": "+ datosPersona[i].nombrePersona + "{0}",
                     Environment.NewLine);
@@ -53,10 +48,10 @@ namespace PrimeraAppMonografico
 
             //MOSTRANDO DATOS 
             Console.WriteLine("Datos de las personas: {0}", Environment.NewLine);
-            for (int j = 0; j <= i; j++)
+            for (int k = 0; k <= i; k++)
             {
-                Console.WriteLine("Persona " + j + " de " + i + "{0}Nombre: " + datosPersona[i].nombrePersona
-                    + "{0}Año de Nacimiento: " + datosPersona[i].anioNacimiento, Environment.NewLine);
+                Console.WriteLine("Persona " + k + " de " + i + "{0}Nombre: " + j[i].nombrePersona
+                    + "{0}Edad: " + (datosPersona[i].anioNacimiento - 2020), Environment.NewLine);
 
             }
             a = Console.ReadLine();

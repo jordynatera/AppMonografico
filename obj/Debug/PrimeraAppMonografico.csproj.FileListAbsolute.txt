@@ -1,0 +1,7 @@
+C:\Users\jordy\source\repos\PrimeraAppMonografico\PrimeraAppMonografico\bin\Debug\PrimeraAppMonografico.exe.config
+C:\Users\jordy\source\repos\PrimeraAppMonografico\PrimeraAppMonografico\bin\Debug\PrimeraAppMonografico.exe
+C:\Users\jordy\source\repos\PrimeraAppMonografico\PrimeraAppMonografico\bin\Debug\PrimeraAppMonografico.pdb
+C:\Users\jordy\source\repos\PrimeraAppMonografico\PrimeraAppMonografico\obj\Debug\PrimeraAppMonografico.csprojAssemblyReference.cache
+C:\Users\jordy\source\repos\PrimeraAppMonografico\PrimeraAppMonografico\obj\Debug\PrimeraAppMonografico.csproj.CoreCompileInputs.cache
+C:\Users\jordy\source\repos\PrimeraAppMonografico\PrimeraAppMonografico\obj\Debug\PrimeraAppMonografico.exe
+C:\Users\jordy\source\repos\PrimeraAppMonografico\PrimeraAppMonografico\obj\Debug\PrimeraAppMonografico.pdb

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PrimeraAppMonografico
    
 {
-    public struct Persona{public string nombrePersona; public int anioNacimiento;}
+    public struct Persona{public string nombrePersona; public int anioNacimiento; public int fechaPersona;}
 
     class Program
     {
@@ -29,31 +29,30 @@ namespace PrimeraAppMonografico
 
             do
             {
-                Console.WriteLine("Inserte los datos de la persona " + i + "{0}", Environment.NewLine);
+                i = i+1;
+                Console.WriteLine("{0}INSERTE LOS DATOS DE LA PERSONA " + i + "{0}", Environment.NewLine);
                 Console.WriteLine("Nombre: ");
                 datosPersona[i].nombrePersona = Console.ReadLine();
-                Console.WriteLine("Fecha de Nacimiento de " + datosPersona[i].nombrePersona + ": {0}", Environment.NewLine);
-                datosPersona[i].anioNacimiento = Console.Read() ;
-                //Prueba
-                Console.WriteLine("{0}PRUEBA DE SALIDA: {0}{0}PERSONA "+i+"{0}Nombre "+ i + ": "+ datosPersona[i].nombrePersona + "{0}",
-                    Environment.NewLine);
-                Console.WriteLine("Fecha de Nacimiento de "+ datosPersona[i].nombrePersona + ": " + datosPersona[i].anioNacimiento+ "{0}",
-                    Environment.NewLine);
-                
-                Console.WriteLine("Desea continuar? (Y/N){0}", Environment.NewLine);
-                respUser = Console.ReadLine();
-                i = i+1;
+                Console.WriteLine("Fecha de Nacimiento de " + datosPersona[i].nombrePersona);
+                datosPersona[i].anioNacimiento = int.Parse(Console.ReadLine());
+                datosPersona[i].fechaPersona = 2020 - datosPersona[i].anioNacimiento;
+                Console.WriteLine("Desea continuar? (Y/N)");
+               respUser = Console.ReadLine();
+
             }
             while (respUser == "y" || respUser == "Y");
 
             //MOSTRANDO DATOS 
-            Console.WriteLine("Datos de las personas: {0}", Environment.NewLine);
-            for (int k = 0; k <= i; k++)
+            Console.WriteLine("{0}DATOS DE LAS PERSONAS: {0}", Environment.NewLine);
+            for (int k = 1; k <= i; k++)
             {
-                Console.WriteLine("Persona " + k + " de " + i + "{0}Nombre: " + j[i].nombrePersona
-                    + "{0}Edad: " + (datosPersona[i].anioNacimiento - 2020), Environment.NewLine);
+                Console.WriteLine("Persona " + k + " de " + i + "{0}Nombre: " + datosPersona[k].nombrePersona
+                    + "{0}Año de Nacimiento: " + datosPersona[k].anioNacimiento
+                    + "{0}Edad: " + datosPersona[k].fechaPersona + "{0}", Environment.NewLine);
 
             }
+    
+            Console.WriteLine("Presione enter para continuar...");
             a = Console.ReadLine();
         }
         

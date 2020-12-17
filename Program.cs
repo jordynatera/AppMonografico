@@ -52,7 +52,7 @@ namespace PrimeraAppMonografico
 
             }
     
-            Console.WriteLine("Presione enter para continuar...");
+            Console.WriteLine("Presione cualquier tecla para continuar...");
             a = Console.ReadLine();
         }
         
